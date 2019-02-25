@@ -8,13 +8,7 @@ class Post
 
   def initialize(title)
     @title = title
-    @author = author
-    @posts = []
-  end
-
-  def new(title)
-    post = Post.new(title)
-    @@all << @post
+    @@all << self
   end
 
   def self.all
