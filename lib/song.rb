@@ -9,13 +9,12 @@ class Song
   end
 
   def new(song)
-    Song.new = song
+    song = Song.new
+    @song = song
+    @name = song.name
     @@all<< song
   end
 
-  def name
-    @name = self.name
-  end
 
   def artist_name
     self.artist ? self.artist.name : nil
